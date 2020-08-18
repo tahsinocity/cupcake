@@ -131,6 +131,7 @@ a:hover {
   position: absolute;
   right: 0px;
   height: 92vh;
+  top: 18.45vh;
   background: #7209b7;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -197,6 +198,7 @@ a:hover {
   background-image: url(/img/bg2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  height: 100vh;
 }
 
 .section p {
