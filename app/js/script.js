@@ -1,3 +1,4 @@
+//new fullpage("#");
 console.log("hello");
 const btnHamburger = document.querySelector("#btnHamburger");
 const burger = document.querySelector("#burger");
