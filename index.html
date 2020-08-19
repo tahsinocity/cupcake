@@ -14,7 +14,7 @@
   </head>
   <body>
     <header class="header">
-      <nav class="flex flex-jc-sb flex-ai-c">
+      <nav id="navbar" class="flex flex-jc-sb flex-ai-c">
         <a href="index.html" class="header__logo">
           <img src="/img/logo.svg" alt="logo" />
           <h1>miss cuppycake</h1>
@@ -33,33 +33,33 @@
           <a href="contact.html">Contact</a>
         </div>
 
+        <div id="burger" class="header__menus hide-for-desktop">
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="menu.html">Menu</a>
+            </li>
+            <li>
+              <a href="services.html">Services</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+
         <!-- <button class="button hide-for-mobile">More</button> -->
       </nav>
     </header>
-
-    <div id="burger" class="header__menus hide-for-desktop">
-      <ul>
-        <li>
-          <a href="index.html">Home</a>
-        </li>
-        <li>
-          <a href="menu.html">Menu</a>
-        </li>
-        <li>
-          <a href="services.html">Services</a>
-        </li>
-        <li>
-          <a href="contact.html">Contact</a>
-        </li>
-      </ul>
-    </div>
 
     <div id="fullpage">
       <section class="section s1">
         <h1>welcome to the world of diabetes</h1>
       </section>
       <section class="section s2">
-        <div class="story">
+        <div class="story flex">
           <h1>Our Story</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae sunt
@@ -78,5 +78,6 @@
     <script src="/fullpage.min.js"></script>
     <script src="/app/js/script.js"></script>
     <script src="/app/js/app.js"></script>
+    <script src="/app/js/navbar.js"></script>
   </body>
 </html>

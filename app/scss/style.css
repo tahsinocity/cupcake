@@ -67,6 +67,9 @@ a:hover {
 .header nav {
   padding: 20px 30px 0px 30px;
   background-color: whitesmoke;
+  position: relative;
+  height: 100px;
+  top: 0;
   z-index: 999;
 }
 
@@ -131,7 +134,7 @@ a:hover {
   position: absolute;
   right: 0px;
   height: 92vh;
-  top: 18.45vh;
+  top: 14vh;
   background: #7209b7;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -248,5 +251,12 @@ a:hover {
   background: whitesmoke;
   opacity: 0.8;
   text-align: center;
+}
+
+.services {
+  background-image: url(/img/services.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.8;
 }
 /*# sourceMappingURL=style.css.map */
