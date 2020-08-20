@@ -16,9 +16,9 @@ body {
   padding: 0;
   line-height: 1.3;
   font-family: "Baloo Tamma 2", cursive;
-  color: #7209b7;
+  color: #842cbe;
   font-size: 1.125rem;
-  overflow: hidden;
+  overflow-x: hidden;
   background-color: #fceef3af;
 }
 
@@ -83,14 +83,14 @@ a:hover {
 
 .header__logo h1 {
   font-size: 1.5rem;
-  color: #7209b7;
+  color: #842cbe;
 }
 
 .header__menu > span {
   display: block;
   width: 26px;
   height: 2px;
-  background-color: #7209b7;
+  background-color: #842cbe;
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }
@@ -113,9 +113,14 @@ a:hover {
           transform: rotate(45deg) translate(-5px, -6px);
 }
 
+.header__menu:hover > span {
+  -webkit-box-shadow: 3px 2px pink;
+          box-shadow: 3px 2px pink;
+}
+
 .header__links a {
   font-size: 1.125rem;
-  color: #7209b7;
+  color: #842cbe;
   width: 0;
   -webkit-transition: width 1s;
   transition: width 1s;
@@ -126,7 +131,7 @@ a:hover {
 }
 
 .header__links a:hover {
-  border-bottom: 2px solid #7209b7;
+  border-bottom: 2px solid #842cbe;
   width: 100%;
 }
 
@@ -135,7 +140,7 @@ a:hover {
   right: 0px;
   height: 92vh;
   top: 14vh;
-  background: #7209b7;
+  background: #842cbe;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -169,6 +174,12 @@ a:hover {
 .header__menus a {
   font-size: 1.5rem;
   color: whitesmoke;
+  -webkit-transition: 300ms ease-in;
+  transition: 300ms ease-in;
+}
+
+.header__menus a:hover {
+  text-shadow: 2px 1px 2px pink;
 }
 
 .header__menus.active {
@@ -187,7 +198,7 @@ a:hover {
 }
 
 .section h1 {
-  color: #7209b7;
+  color: #842cbe;
   font-size: 50px;
   position: absolute;
   top: 30%;
@@ -195,6 +206,10 @@ a:hover {
   -webkit-transform: translate(-50%, -30%);
           transform: translate(-50%, -30%);
   text-align: center;
+  -webkit-box-shadow: 10px 20px 15px 10px rgba(128, 128, 128, 0.692);
+          box-shadow: 10px 20px 15px 10px rgba(128, 128, 128, 0.692);
+  text-shadow: 2px 1px 3px pink;
+  padding: 30px;
 }
 
 .s2 {
@@ -205,7 +220,7 @@ a:hover {
 }
 
 .section p {
-  color: #7209b7;
+  color: #842cbe;
   font-size: 20px;
   position: absolute;
   top: 55%;
@@ -213,7 +228,7 @@ a:hover {
   -webkit-transform: translate(-50%, -55%);
           transform: translate(-50%, -55%);
   text-align: left;
-  border: 1px solid #7209b7;
+  border: 1px solid #842cbe;
   padding: 20px;
 }
 
@@ -225,7 +240,7 @@ a:hover {
 }
 
 .section h2 {
-  color: whitesmoke;
+  color: #842cbe;
   font-size: 50px;
   position: absolute;
   top: 30%;
@@ -233,7 +248,7 @@ a:hover {
   -webkit-transform: translate(-50%, -30%);
           transform: translate(-50%, -30%);
   text-align: center;
-  border: 1px solid whitesmoke;
+  text-shadow: 2px 2px pink;
 }
 
 .section p1 {
@@ -253,10 +268,133 @@ a:hover {
   text-align: center;
 }
 
-.services {
-  background-image: url(/img/services.jpg);
+.section h3 {
+  color: #842cbe;
+  font-size: 50px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -30%);
+          transform: translate(-50%, -30%);
+  text-align: center;
+  text-shadow: 2px 2px pink;
+}
+
+.s {
+  background-image: url(/img/bg4.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   opacity: 0.8;
+}
+
+.service h1 {
+  font-size: 40px;
+  text-align: center;
+}
+
+.menu_header {
+  color: #842cbe;
+  font-size: 30px;
+  text-align: center;
+  text-shadow: 2px 2px pink;
+  padding-left: 600px;
+  padding-right: 600px;
+}
+
+.menu_header h1 {
+  border: 3px pink solid;
+  border-radius: 20%;
+}
+
+.cakes {
+  height: auto;
+  width: auto;
+  margin-right: 270px;
+  margin-left: 270px;
+}
+
+.cakes .choco {
+  margin: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cakes .choco_img img {
+  max-width: 200px;
+  height: 200px;
+  border-radius: 5%;
+}
+
+.cakes .choco_info {
+  margin-left: 10px;
+  height: auto;
+  text-align: left;
+}
+
+.cakes .vanilla {
+  margin: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cakes .vanilla_img img {
+  max-width: 200px;
+  height: 200px;
+  border-radius: 5%;
+}
+
+.cakes .vanilla_info {
+  margin-left: 10px;
+  text-align: right;
+  height: auto;
+}
+
+.cakes .strawberry {
+  margin: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cakes .strawberry_img img {
+  max-width: 200px;
+  height: 200px;
+  border-radius: 5%;
+}
+
+.cakes .strawberry_info {
+  margin-left: 10px;
+  height: auto;
+  text-align: left;
+}
+
+@media only screen and (max-width: 1080px) {
+  .cakes {
+    margin-right: 70px;
+    margin-left: 70px;
+  }
+  .menu_header {
+    padding-left: 250px;
+    padding-right: 250px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,6 +1,107 @@
-.services {
-  background-image: url(/img/services.jpg);
+.s {
+  background-image: url(/img/bg4.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   opacity: 0.8;
+}
+
+.service h1 {
+  font-size: 40px;
+  text-align: center;
+}
+
+.menu_header {
+  color: $purple;
+  font-size: 30px;
+  text-align: center;
+  text-shadow: 2px 2px pink;
+  //border: 2px pink solid;
+  padding-left: 600px;
+  padding-right: 600px;
+}
+
+.menu_header h1 {
+  border: 3px pink solid;
+  border-radius: 20%;
+}
+.cakes {
+  //border: 1px solid red;
+  height: auto;
+  width: auto;
+  margin-right: 270px;
+  margin-left: 270px;
+
+  .choco {
+    margin: 30px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .choco_img img {
+    max-width: 200px;
+    height: 200px;
+    //border: 1px solid purple;
+    border-radius: 5%;
+  }
+
+  .choco_info {
+    margin-left: 10px;
+    //margin-right: 10px;
+    height: auto;
+    //border: 1px solid purple;
+    text-align: left;
+  }
+
+  .vanilla {
+    margin: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .vanilla_img img {
+    max-width: 200px;
+    height: 200px;
+    border-radius: 5%;
+  }
+
+  .vanilla_info {
+    margin-left: 10px;
+    //margin-right: 10px;
+    text-align: right;
+    height: auto;
+  }
+
+  .strawberry {
+    margin: 30px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .strawberry_img img {
+    max-width: 200px;
+    height: 200px;
+    border-radius: 5%;
+  }
+
+  .strawberry_info {
+    margin-left: 10px;
+    //margin-right: 10px;
+    height: auto;
+    //border: 1px solid purple;
+    text-align: left;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  .cakes {
+    margin-right: 70px;
+    margin-left: 70px;
+  }
+
+  .menu_header {
+    padding-left: 250px;
+    padding-right: 250px;
+  }
 }

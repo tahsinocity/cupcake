@@ -50,6 +50,12 @@
     }
   }
 
+  &__menu:hover {
+    > span {
+      box-shadow: 3px 2px pink;
+    }
+  }
+
   &__links {
     a {
       font-size: $medium;
@@ -92,6 +98,11 @@
     a {
       font-size: $large;
       color: whitesmoke;
+      transition: 300ms ease-in;
+    }
+
+    a:hover {
+      text-shadow: 2px 1px 2px pink;
     }
     &.active {
       transform: translateX(0%);
@@ -116,6 +127,10 @@
   left: 50%;
   transform: translate(-50%, -30%);
   text-align: center;
+  //border: 1px $pink solid;
+  box-shadow: 10px 20px 15px 10px rgba(128, 128, 128, 0.692);
+  text-shadow: 2px 1px 3px pink;
+  padding: 30px;
 }
 
 .s2 {
@@ -145,14 +160,14 @@
 }
 
 .section h2 {
-  color: whitesmoke;
+  color: $purple;
   font-size: 50px;
   position: absolute;
   top: 30%;
   left: 50%;
   transform: translate(-50%, -30%);
   text-align: center;
-  border: 1px solid whitesmoke;
+  text-shadow: 2px 2px pink;
 }
 
 .section p1 {
@@ -169,4 +184,15 @@
   background: whitesmoke;
   opacity: 0.8;
   text-align: center;
+}
+
+.section h3 {
+  color: $purple;
+  font-size: 50px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  text-align: center;
+  text-shadow: 2px 2px pink;
 }
